@@ -1,0 +1,26 @@
+{
+  "name": "hubot-trello-list-alerts",
+  "version": "0.1.0",
+  "description": "A small module to receive trello webhooks and parse them for actions that happen on certain trello lists",
+  "main": "index.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fusionspim/hubot-trello-list-alerts"
+  },
+  "keywords": [
+    "hubot",
+    "trello"
+  ],
+  "author": "Gabriel Baker <me@g403.co> (http://g403.co/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fusionspim/hubot-trello-list-alerts/issues"
+  },
+  "homepage": "https://github.com/fusionspim/hubot-trello-list-alerts",
+  "devDependencies": {
+    "coffee-script": "^1.9.1"
+  }
+}
