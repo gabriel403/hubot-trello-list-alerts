@@ -5,7 +5,7 @@
 #   gabriel403
 #
 module.exports = (robot) ->
-  trello_list_alerts_actions  = ['createCard', 'commentCard', 'addMemberToCard', 'updateCard']
+  trello_list_alerts_actions  = (process.env['HUBOT_TRELLO_ACTIONS'] || 'createCard,commentCard,addMemberToCard,updateCard').split ','
   trello_list_alerts_list_ids = process.env['HUBOT_TRELLO_LIST_IDS'].split ','
   trello_list_alerts_name     = process.env['HUBOT_TRELLO_ALERT_NAME'] || 'Regression'
   trello_list_webhook_route   = process.env['HUBOT_TRELLO_WEBHOOK_ROUTE'] || '/hubot/trello/regressions'
